@@ -1,16 +1,56 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hindi to Nepali Translation</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .translation-box { max-width: 500px; margin: auto; }
-        textarea, button { width: 100%; padding: 10px; margin-top: 10px; font-size: 16px; }
-        #output { margin-top: 10px; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; min-height: 100px; }
+        :root {
+            --box-width: 100%; /* Default width of textarea and output box */
+            --box-height: 37.5px; /* Default height of textarea and output box */
+            --button-width: 100%; /* Default width of button */
+            --button-height: 50px; /* Default height of button */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white for contrast */
+        }
+        .translation-box {
+            max-width: 300px;
+            margin: auto;
+        }
+        textarea, #output {
+            width: var(--box-width);
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            height: var(--box-height);
+            box-sizing: border-box;
+        }
+        button {
+            width: var(--button-width);
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            height: var(15px);
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333; /* Darker background color for output */
+            color: white; /* Set text color to white */
+            border: 1px solid #555; /* Darker border color */
+            min-height: var(--box-height); /* Ensure min-height is equal to the textarea height */
+            text-align: center; /* Center text in the output box */
+        }
     </style>
 </head>
+
+
 <body>
     <div class="translation-box">
         <h2>Hindi to Nepali Translator</h2>
