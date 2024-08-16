@@ -15,7 +15,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: black; /* Set background color to black */
+            background-color: #24292d; /* Set background color to black */
             color: white; /* Set text color to white for contrast */
         }
         .translation-box {
@@ -53,9 +53,9 @@
 
 <body>
     <div class="translation-box">
-        <h2>Hindi to Nepali Translator</h2>
+        <h3>Hindi to Nepali Translator</h3>
         <textarea id="hindiInput" rows="5" placeholder="Enter Hindi text here..."></textarea>
-        <button onclick="translateToNepali()">Translate</button>
+        <button onclick="translateToNepali()">Click To Translate</button>
         <div id="output"></div>
     </div>
     <script>
