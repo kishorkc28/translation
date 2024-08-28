@@ -1,61 +1,22 @@
-  
+ 
+ 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hindi to Nepali Translation</title>
     <style>
-        :root {
-            --box-width: 100%; /* Default width of textarea and output box */
-            --box-height: 37.5px; /* Default height of textarea and output box */
-            --button-width: 100%; /* Default width of button */
-            --button-height: 50px; /* Default height of button */
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #24292d; /* Set background color to black */
-            color: white; /* Set text color to white for contrast */
-        }
-        .translation-box {
-            max-width: 300px;
-            margin: auto;
-        }
-        textarea, #output {
-            width: var(--box-width);
-            padding: 10px;
-            margin-top: 10px;
-            font-size: 16px;
-            height: var(--box-height);
-            box-sizing: border-box;
-        }
-        button {
-            width: var(--button-width);
-            padding: 10px;
-            margin-top: 10px;
-            font-size: 16px;
-            height: var(15px);
-            cursor: pointer;
-        }
-        #output {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #333; /* Darker background color for output */
-            color: white; /* Set text color to white */
-            border: 1px solid #555; /* Darker border color */
-            min-height: var(--box-height); /* Ensure min-height is equal to the textarea height */
-            text-align: center; /* Center text in the output box */
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .translation-box { max-width: 500px; margin: auto; }
+        textarea, button { width: 100%; padding: 10px; margin-top: 10px; font-size: 16px; }
+        #output { margin-top: 10px; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; min-height: 100px; }
     </style>
 </head>
-
-
 <body>
     <div class="translation-box">
-        <h3>Hindi to Nepali Translator</h3>
+        <h2>Hindi to Nepali Translator</h2>
         <textarea id="hindiInput" rows="5" placeholder="Enter Hindi text here..."></textarea>
-        <button onclick="translateToNepali()">Click To Translate</button>
+        <button onclick="translateToNepali()">Translate</button>
         <div id="output"></div>
     </div>
     <script>
@@ -173,7 +134,7 @@
 'अंतर्नियम': 'विशेष अंश',
 'अंतर्राराष्ट्रिय': 'अन्तर्राष्ट्रिय',
 'अंतराष्ट्रीयता': 'अन्तर्रराष्ट्रीयता',
-'अंतर्लयन': 'सोसाइ, खिंचाइ, कुनै तरल पदार्थ'
+'अंतर्लयन': 'सोसाइ, खिंचाइ, कुनै तरल पदार्थ',
 'अंतर्लीन': 'अन्तर्निहित',
     'अंतर्वती': 'अन्तर्गत',
     'अंतर्वस्तु': 'अन्तर्वस्तु भित्र भएको वस्तु',
@@ -241,7 +202,7 @@
     'अकाट्य': 'काट्न नसकिने',
     'अकादमी': 'एकाडेमी, प्रज्ञाप्रतिष्ठान',
     'अकाम': 'गर्न नहुने काम',
-    'अकार': 'अकार, \'अ\' स्वर वर्ण तथा \'अ\' को उच्चारण',
+    'अकार': 'अकार, को उच्चारण',
     'अकारण': 'बिनाकारण',
     'अकारथ': 'निरर्थक, काम नलाग्ने',
     'अकाल': 'अकाल, अनिकाल, अभाव, नराम्रो समय, दुष्काल',
@@ -263,8 +224,9 @@
     'अक्षत': 'नबिग्रिएको कुनै चोटपटक नलागेको, अक्षता',
     'अक्षम': 'असमर्थ',
     'अक्षम': 'क्षय नहुने',
-    'अक्षम्य': 'क्षमा दिन नसकिने'
-'अक्षर': 'लिखित वर्ण, नाश नहुने',
+    'अक्षम्य': 'क्षमा दिन नसकिने',
+    'अक्षर': 'लिखित वर्ण, नाश नहुने',
+    'अक्षर': 'लिखित वर्ण, नाश नहुने',
 'अक्षरश': 'अक्षर-अक्षर गरेर',
 'अक्षांश': 'अक्षांश',
 'अक्षि': 'आँखा, दृष्टि, दृष्टिपात गर्नु, झलक, टक लाएर हेर्नु',
@@ -414,7 +376,7 @@
     'अदरक': 'अदुवा',
     'अदर्शन': 'अदृश्य भावना',
     'अदल-बदल': 'हेरफेर',
-    'अदा': 'भद्र व्यवहार',
+     'अदा': 'भद्र व्यवहार',
     'अदालत': 'अदालत, न्यायालय',
     'अदावत': 'शत्रुता, दुश्ममी',
     'अदृश्य': 'अदृश्य, नदेखिने',
@@ -509,7 +471,7 @@
     'अनर्जित': 'अर्जन नगरिएको, बिना कमाइको',
     'अनर्थ': 'अनर्थ व्यर्थको, बेकारको, अर्थहीन',
     'अनल': 'आगो',
-    'अनवध': 'निर्दोष, त्रुटिरहित',
+     'अनवध': 'निर्दोष, त्रुटिरहित',
     'अनवधान': 'ध्यान नभएको, एकाग्रताहीन',
     'अनशन': 'उपवास बस्नु, व्रत बस्नु',
     'अनहोनी': 'असंभव, अस्वाभाविक',
@@ -1821,7 +1783,7 @@
 'एकसूत्रता': 'एकसूत्रता, एकीकरण, समन्वयन, तालमेल, बराबर दर्जाको',
 'एकस्व': 'स्वाधिकारसम्बन्धी, प्रचारित, प्रचलित, स्पष्ट, प्रत्यक्ष',
 'एकहरा': 'एकलो, एकमात्र, एउटामात्र, एकलै',
-'एकांगा': 'एकपक्षीय, एकतर्फा, एकपाक्षिक, एकापट्टि''
+'एकांगा': 'एकपक्षीय, एकतर्फा, एकपाक्षिक, एकापट्टि',
 'एकांगी': 'एकाङ्गी, एउटैमात्र अङ्ग भएको, पाक्षिक',
 'एकांत': 'एकान्त, सुनसान, निर्जन, एकलास',
 'एकांतर': 'निरन्तर, एकान्तर, विकल्प, पालैसँग पालैसँग हुनु',
@@ -3126,7 +3088,7 @@
     'घिसघस': 'शिथिलता, अल्छीलाग्दो: सुस्ती ',
     'घिसन': 'घोटिएर थोत्रो हुने क्रिया, घिस्सिइनु ',
     'घिसना': 'दलिनु, घिस्सिएर थोत्रो हुनु, घिस्सिनु ',
-    'घिसपिस': 'पूर्ण परिचय, मैत्री, मित्रता, घनिष्ठता ',
+     'घिसपिस': 'पूर्ण परिचय, मैत्री, मित्रता, घनिष्ठता ',
     'घिस्सा': 'घिस्साइ, विरोध, झगड़ा, मतभेद ',
     'घिनोना': 'घिनलाग्दो, घृणित ',
     'घियाकश': 'एक किसिमको करेसो, लौका ',
@@ -4174,7 +4136,7 @@
     'टेकरी': 'थुम्को, ढिस्को, सानोपहाड़, डाँड़ो',
     'टेढ़ा': 'टेढो, छड़के, बाङ्गो, वक्र',
     'टेना': 'शान लाउन, धार लाउनु, उध्याउनु',
-    'टेर': 'पुकारा, डाक, बोलाउनु, डाकनु',
+     'टेर': 'पुकारा, डाक, बोलाउनु, डाकनु',
     'टेलिफ़ोन': 'दूरभाष, टेलिफोन',
     'टेलिविजन': 'टेलिविजन, दूरदर्शन',
     'टेलीप्रिंटर': 'टेलिप्रिन्टर',
@@ -7675,9 +7637,7 @@
 'भेदी': 'रहस्य साटासाट गर्ने',
 'भेदित': 'छेडिएको, प्वाल पारिएको, दुलो बनाइएको',
 'भेदिया': 'जासूस, चिया',
-
-
-            };
+     };
             var words = hindiText.split(/\s+/);
             for (var i = 0; i < words.length; i++) {
                 var word = words[i];
@@ -7692,3 +7652,5 @@
     </script>
 </body>
 </html>
+
+
